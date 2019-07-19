@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculadora Correção de Valores</title>
+
+    <!-- https://www.w3schools.com/icons/tryit.asp?filename=tryicons_google-content_copy -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <div id="grid-container-body">
+        <header>
+            <h1>Correção de Valores</h1>
+        </header>
+        <div class="div-form">
+            <form id="grid-container-form">
+                <p id="select-indices">
+                    <label>Índice de Correção</label>
+                    <select class="full-width typed-input">
+                        <option value="12">CDI</option>
+                        <option value="11">Selic</option>
+                        <option value="433">IPCA</option>
+                        <option value="226">TR</option>
+                    </select>
+                </p>
+                <p id="cdi-percentage">
+                    <label>Porcentagem CDI</label>
+                    <input class="full-width typed-input" type="number" step="any" min="0" required>
+                </p>
+                <p id="start-date">
+                    <label>Data Inicial</label>
+                    <input class="full-width typed-input" type="date" required>
+                </p>
+                <p id="end-date">
+                    <label>Data Final</label>
+                    <input class="full-width typed-input" type="date" value="DOMString" required>
+                </p>
+                <p id="calc-value" class="grid-item-column-span">
+                    <input class="full-width typed-input" type="number" step="any" min="0" placeholder="Valor" required>
+                </p>
+                <p id="" class="grid-item-column-span">
+                    <label>
+                        Fator de Correção
+                        <button type="button">
+                            <i class="far fa-copy"></i>
+                        </button>
+                    </label>
+                    <output>
+                        something something something
+                    </output>
+                </p>
+                <p id="" class="grid-item-column-span">
+                    <label>
+                        Valor Ajustado
+                        <button type="button">
+                                <i class="far fa-copy"></i>
+                        </button>
+                    </label>
+                    <output>
+                        something 
+                    </output>
+                </p>
+            </form>
+        </div>
+        <footer id="grid-container-footer">
+            <button form="grid-container-form" id="button-reset" class="buttons" type="reset">Limpar</button>
+            <input form="grid-container-form" id="button-submit" class="buttons" type="submit" value="Calcular">
+        </footer>
+    </div>
+</body>
+</html>
