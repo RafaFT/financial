@@ -7,7 +7,6 @@
 
 body {
   height: 100vh;
-  border: 5px solid red;
 }
 
 #grid-container-body {
@@ -31,8 +30,6 @@ header {
   grid-column: 1 / -1;
   grid-row: 2;
   background-color: aquamarine;
-
-  border: 2px solid purple;
 }
 
 #grid-container-form {
@@ -44,7 +41,6 @@ header {
 }
 
 #grid-container-form p {
-  border: 1px solid black;
   margin: 0;
   padding: 0.5vh;
 }
@@ -88,7 +84,6 @@ button.button {
 }
 
 #grid-container-footer {
-  border: 1px solid chocolate;
   padding: 1vw;
   grid-column: 1 / -1;
   grid-row: 3;
